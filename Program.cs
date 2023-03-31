@@ -31,10 +31,6 @@ namespace HospitalsAnarchy
 
         public void Work()
         {
-            //ShowPatients();
-            //_patients = SortPatientsByFullNames(_patients);
-            //ConsoleOutputMethods.WriteRedText("Отсортированные по ФИО:\n");
-            //ShowPatients();
             const string CommandShowPatients = "1";
             const string SortByFullNames = "2";
             const string SortByFullAge = "3";
@@ -169,7 +165,7 @@ namespace HospitalsAnarchy
             string fullName = _fullNames[_random.Next(0, _fullNames.Count)];
             int age = _random.Next(MinimumAge, MaximumAge);
             string diseas = _diseases[_random.Next(0, _diseases.Count)];
-            //
+            
             return new Patient(fullName, age, diseas);
         }
     }
